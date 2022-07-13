@@ -14,9 +14,18 @@ const assignment = {};
  * @returns number the sum of the numbers
  */
 function sumOfNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+  var sum = 0
+  for (let i = 0; i < arrayOfNumbers.length; i++) {
+// first check that the indexed item is an integer
+    if (isNaN(arrayOfNumber[i]) {
+      sum = sum + 0;
+    }
+    else {//if it is a number do a simple addition
+      sum = sum + arrayOfNumbers [i];
+    }
+  }
+  return sum;
 }
-// assignment.sumOfNumbers = sumOfNumbers;
 
 /**
  * Challenge - 2
@@ -28,9 +37,21 @@ function sumOfNumbers(arrayOfNumbers) {
  * @returns number the count of even numbers
  */
 function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+  var countEven = 0
+  for (let i = 0; i < arrayOfNumbers.length; i++) {
+  //first check that the indexed item is an integer
+    if (isNaN(arrayOfNumber[i]) {
+      countEven = countEven + 0;
+    }
+    else if (arrayNumbers[i] % 2 == 0){//if it is a number, check if it is divisible by 2
+      countEven = countEven + 1;
+    }
+    else{//if it is a number, check if it is not divisible by 2
+      countEven = countEven + 0;
+    }
+  }
+  return countEven;
 }
-// assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
@@ -47,7 +68,23 @@ function countEvenNumbers(arrayOfNumbers) {
  * @returns Array the converted temperatures in Fahrenheit
  */
 function celsiusToFahrenheit(arrayOfNumbers) {
-    return arrayOfNumbers;
+  var fahrenheitArray = Array();
+  var fahrenheitArray = [];
+  
+  for (let i = 0; i < arrayOfNumbers.length; i++) {
+    // first check that the indexed item is an integer
+    if (isNaN(arrayOfNumber[i]) {
+      var fah = 0;
+      //fahrenheitArray[i] = fah;
+      fahrenheitArray.push(fah);
+    }
+    else {//if it is a number do a simple addition
+      var fah = (1.8 *arrayOfNumber[i]) + 32;
+      //fahrenheitArray[i] = fah;
+      fahrenheitArray.push(Math.trunc(fah));
+    }
+  }
+  return sum;
 }
 // assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
