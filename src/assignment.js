@@ -17,16 +17,16 @@ function sumOfNumbers(arrayOfNumbers) {
   var sum = 0
   for (let i = 0; i < arrayOfNumbers.length; i++) {
 // first check that the indexed item is an integer
-    if (isNaN(arrayOfNumber[i]) {
+    if (isNaN(arrayOfNumbers[i])) {
       sum = sum + 0;
     }
-    else {//if it is a number do a simple addition
+    else {
+//if it is a number do a simple addition
       sum = sum + arrayOfNumbers [i];
     }
   }
   return sum;
 }
-
 /**
  * Challenge - 2
  * 
@@ -37,16 +37,18 @@ function sumOfNumbers(arrayOfNumbers) {
  * @returns number the count of even numbers
  */
 function countEvenNumbers(arrayOfNumbers) {
-  var countEven = 0
+  var countEven = 0;
   for (let i = 0; i < arrayOfNumbers.length; i++) {
   //first check that the indexed item is an integer
-    if (isNaN(arrayOfNumber[i]) {
+    if (isNaN(arrayOfNumbers[i])) {
       countEven = countEven + 0;
     }
-    else if (arrayNumbers[i] % 2 == 0){//if it is a number, check if it is divisible by 2
+    else if (arrayNumbers[i] % 2 == 0){
+      //if it is a number, check if it is divisible by 2
       countEven = countEven + 1;
     }
-    else{//if it is a number, check if it is not divisible by 2
+    else{
+      //if it is a number, check if it is not divisible by 2
       countEven = countEven + 0;
     }
   }
@@ -73,22 +75,20 @@ function celsiusToFahrenheit(arrayOfNumbers) {
   
   for (let i = 0; i < arrayOfNumbers.length; i++) {
     // first check that the indexed item is an integer
-    if (isNaN(arrayOfNumber[i]) {
+    if (isNaN(arrayOfNumbers[i])) {
       var fah = 0;
       //fahrenheitArray[i] = fah;
       fahrenheitArray.push(fah);
     }
-    else {//if it is a number do a simple addition
-      var fah = (1.8 *arrayOfNumber[i]) + 32;
+    else {
+      //if it is a number do a simple addition
+      var fah = (1.8 *arrayOfNumbers[i]) + 32;
       //fahrenheitArray[i] = fah;
       fahrenheitArray.push(Math.trunc(fah));
     }
   }
   return sum;
 }
-// assignment.celsiusToFahrenheit = celsiusToFahrenheit;
-
-
 // ========================
 // DO NOT EDIT THIS BLOCK
 module.exports = assignment;
